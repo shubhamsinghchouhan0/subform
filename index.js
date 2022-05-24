@@ -34,19 +34,19 @@ mongoose.connect('mongodb://localhost:27017/subform', {useNewUrlParser: true, us
 
 // Adding a form
 app.post('/', (req, res) => {
-    let { name, email, phone,place  } = req.body
+    let { name, email, phone,Description } = req.body
     if (name && email && phone ){
 
 
     name = req.body.name,
     email = req.body.email,
     phone = req.body.phone,
-    place = req.body.place
+    Description = req.body.Description
    let newForm = new form({
      name: name,
      email: email,
      phone: phone,
-     place: place
+     Description: Description
     })
     newForm.save().then((form) => {
      res.send(form)

@@ -17,7 +17,7 @@ const formSchema = mongoose.Schema({
      type: Number,
      required: true
     },
-    place: {
+    Description: {
      type: String,
      required: true
     }
