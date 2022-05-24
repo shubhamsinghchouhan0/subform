@@ -1,0 +1,25 @@
+{
+  "name": "subform",
+  "version": "1.0.0",
+  "description": "form in node js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamsinghchouhan0/subform.git"
+  },
+  "author": "shubham singh chouhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shubhamsinghchouhan0/subform/issues"
+  },
+  "homepage": "https://github.com/shubhamsinghchouhan0/subform#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16"
+  }
+}
