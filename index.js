@@ -34,8 +34,8 @@ mongoose.connect('mongodb://localhost:27017/subform', {useNewUrlParser: true, us
 
 // Adding a form
 app.post('/', (req, res) => {
-    let { name, email, phone,Description } = req.body
-    if (name && email && phone ){
+    let { name, email, phone,address,dob } = req.body
+    if (name && email && phone && address &&dob ){
 
 
     name = req.body.name,
@@ -54,6 +54,7 @@ app.post('/', (req, res) => {
      console.log(error)
     })
 }
+
    })
 
 

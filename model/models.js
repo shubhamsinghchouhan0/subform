@@ -12,15 +12,14 @@ const formSchema = mongoose.Schema({
      type: String,
      required: true,
     lowercase: true },
-    
+    dob: { type: Date,required: true },
     phone: {
      type: Number,
      required: true
     },
-    Description: {
-     type: String,
-     required: true
-    }
+    address: {type: String,
+    required: true
+    },
    })
    //Creating the collection Address
    const form = mongoose.model('form', formSchema)
